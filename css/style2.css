@@ -1,0 +1,219 @@
+/******************************** Universeel selector ******************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********************************************************************************************/
+
+
+/***************************************** Fluid grid ******************************************/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    [class*="col-"] {
+        float: left;        
+        padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+/**********************************************************************************************/
+
+
+
+/****************************************** Body ******************************************/
+body {
+    background-color: rgba(0, 229, 255, 0.8);
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+    body{
+    background-color: rgba(0, 229, 255, 0.5);
+    font-size: 16px;
+    }
+}
+
+
+/**********************************************************************************************/
+
+
+
+/****************************************** Header ******************************************/
+header{
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/Rotterdam.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    background-size: cover;
+    line-height: 200px;
+    
+    /* Voor als de foto niet geladen kan worden */
+    background-color: blue;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+    background-image: url('../img/Erasmusbrug.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+    background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+    background-image: url('../img/Erasmusbrug.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 75%;
+    background-size: cover;
+    }
+}
+
+h1 {
+    color: white;
+    font-size: 75px;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    text-align: center;
+}
+/**********************************************************************************************/
+
+
+
+/****************************************** Col-2 ******************************************/
+
+h2 {
+    color: white;
+    background-color: navy;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    
+}
+
+.col-2 {
+    background-color: rgba(0, 0, 255, 0.203);
+}
+
+/**********************************************************************************************/
+
+
+
+/****************************************** Col-9 ******************************************/
+
+
+img {
+    width: 100%;
+    display: block;
+}
+
+span {
+    width: 100%;
+    display: block;
+    color: white;
+    font-size: 50px;
+    background-color: blue;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+    img {
+    width: 300px;
+    height: auto;
+    float: right;
+    }
+}
+
+.attractie {
+    width: 100%;
+    height: auto;
+    display: block;
+    color: black;
+    background-color: pink;
+    border: 1px solid black;
+    margin-right: 1px;
+    padding-bottom: 20px;
+}
+
+.col-9 {
+    background-color: green;
+    height: auto;
+    margin-top: 15px;
+}
+
+.flex {
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .flex {
+        display: flex;
+    }
+}
+/**********************************************************************************************/
+
+
+
+/****************************************** footer ******************************************/
+
+
+footer {
+    clear: left;
+    width: 100%;
+    padding: 25px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bolder;
+    margin-top: -5px;
+}
+
+@media only screen and (min-width: 768px) {
+    footer {
+        background-color: rgba(0, 0, 255, 0.812);
+        padding: 50px;
+        font-size: 20px;
+    }
+}
+/**********************************************************************************************/
