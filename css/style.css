@@ -81,15 +81,6 @@ header{
     }
 }
 
-@media only screen and (min-width: 992px) {
-    header {
-    background-image: url('../img/Erasmusbrug.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 75%;
-    background-size: cover;
-    }
-}
-
 h1 {
     color: white;
     font-size: 75px;
@@ -117,6 +108,7 @@ ul {
     margin: 0;
     padding: 0;
     text-align: center;
+    height: auto;
 }
 
 ul li {
@@ -126,8 +118,18 @@ ul li {
 
 }
 
+.spacing-top {
+    padding-top: 25px;
+}
+
+.spacing-bottom {
+    padding-bottom: 25px;
+}
+
+
 .col-2 {
     background-color: rgba(0, 0, 255, 0.203);
+    
 }
 
 /**********************************************************************************************/
@@ -139,14 +141,17 @@ ul li {
 
 img {
     width: 100%;
+    max-width: 437px;
+    height: auto;
     display: block;
+    border: 2px solid white;
 }
 
 span {
     width: 100%;
     display: block;
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     background-color: blue;
     height: 70px;
     line-height: 70px;
@@ -156,6 +161,7 @@ span {
 p {
     margin: 10px;
 }
+
 
 @media only screen and (min-width: 768px) {
     img {
@@ -172,15 +178,12 @@ p {
     color: black;
     background-color: pink;
     border: 1px solid black;
-    margin-right: 1px;
+    margin-right: 5px;
     padding-bottom: 20px;
-    margin-bottom: 5px;
 }
-
 .col-9 {
     background-color: green;
     height: auto;
-    margin-top: 15px;
 }
 
 .flex {
@@ -208,9 +211,8 @@ footer {
     background-color: blue;
     color: white;
     text-align: center;
-    font-size: 17px;
-    font-weight: bolder;
-    margin-top: -5px;
+    font-size: 16px;
+    font-weight:bold;
 }
 
 @media only screen and (min-width: 768px) {
